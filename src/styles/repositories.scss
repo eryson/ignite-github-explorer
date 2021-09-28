@@ -1,0 +1,32 @@
+section.repository-list {
+  margin: 40px;
+
+  h1 {
+    margin-bottom: 16px;
+  }
+
+  ul {
+    list-style: none;
+
+    // '&' -> No SASS referencia o próprio elemento
+    // '+ li' -> pega a próxima li e aplica o style
+    li {
+      & + li {
+        margin-top: 20px;
+      }
+    }
+
+    p {
+      font-size: 14px;
+      color: #444;
+      margin-top: 8px;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 16px;
+      text-decoration: none; //Tira o underline
+      color: #8257e6;
+    }
+  }
+}
